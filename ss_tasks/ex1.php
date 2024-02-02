@@ -1,3 +1,4 @@
+<?php include 'header.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,3 +52,4 @@
      <img src="images/ss.png"alt="web development environment">
 </body>
 </html>
+<?php include 'footer.php'; ?>
