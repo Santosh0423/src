@@ -52,7 +52,13 @@
     ?>
 
     <h3>For Loop: Multiplication Table</h3>
-    
+   
+    <?php
+    $n = 67; 
+    for ($i = 1; $i <= 10; $i++) {
+        echo "$n x $i = " . ($n * $i) . "<br>";
+    }
+    ?>
 
     <h3>Foreach Loop: Print Elements of an Array</h3>
     <?php
