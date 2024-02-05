@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="style.css">
 </section>
 
-<div class="footer">
+<<div class="footer">
     <div class="footer-col">
         <h4>About Us</h4>
         <p>Bagmati Restaurant is a Nepali restaurant that prepares and serves food and drinks to customers.</p>
@@ -35,6 +35,16 @@
         </div>
     </div>
 
+    <div class="footer-col">
+        <h3>Last Modified</h3>
+        <?php
+        $filename = basename($_SERVER['PHP_SELF']);
+        $lastModifiedTime = filemtime($filename);
+        $formattedTime = date("F j, Y H:i:s", $lastModifiedTime);
+        echo "<p>Last modified: $formattedTime</p>";
+        ?>
+    </div>
+</div>
     <div class="footer-col social-icons">
         <h3>Get In Touch</h3>
         <div class="social-icons-container">
