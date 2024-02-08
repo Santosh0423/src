@@ -1,4 +1,7 @@
 <?php
+include '../header.php';
+?>
+<?php
 if (isset($_POST['submit'])) {
 $first_name = $_POST['fname'];
 $last_name = $_POST['lname'];
@@ -8,11 +11,12 @@ $groupid = $_POST['groupid'];
 include 'db.php';
 
 //write sql statement to insert data
-$sql = "insert into Table(first_name, last_name, groupid, city)
-        values('$first_name', '$last_name', '$city', '$groupid')";
+$sql = "INSERT INTO studentInfo (first_name, last_name, groupid, city) 
+        VALUES ('$first_name', '$last_name', '$city', '$groupid')";
 
 
-        if ($connection->query($sql)===True){
+
+        if ($conn->query($sql)===True) {
             echo "Your data was recorded";
 
         }
@@ -28,4 +32,7 @@ $conn->close();
 
 
 
+?>
+<?php
+include '../footer.php';
 ?>

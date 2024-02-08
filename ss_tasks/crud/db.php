@@ -1,13 +1,13 @@
 <?php
-$servername = "web-dev-env-main";
-$username = "Root";
-$password = "password"; // Corrected variable name
-$dbname = "App1";
+$servername = "localhost";
+$username = "santosh23000";
+$password = "c5p2iCLh"; 
+$dbname = "wp_santosh23000";
 
-// Create database connection 
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
